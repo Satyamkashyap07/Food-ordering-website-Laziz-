@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Register - Laziz-The Royal Zayka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Header Section (from index.html) -->
+    <section id="header">
+        <a href="index.html"><img src="img/logos/image-240x110.jpg" class="logo" alt="Laziz-The Royal Zayka"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Foods</a></li>
+                <li><a href="blog.html">Recipes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section id="page-header">
+        <h2>Sign In / Register</h2>
+        <p>Access your account or create a new one.</p>
+    </section>
+
+    <!-- Login/Sign Up Section -->
+    <section id="auth-section" class="section-p1">
+        <div class="auth-container">
+            <div class="auth-form">
+                <h3>Sign In</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="auth-btn">Sign In</button>
+                    <p class="auth-link">Don't have an account? <a href="#">Register</a></p>
+                </form>
+            </div>
+
+            <div class="auth-form">
+                <h3>Register</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="reg-email">Email:</label>
+                        <input type="email" id="reg-email" name="reg-email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" name="reg-password" required placeholder="Create a password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+                    </div>
+                    <button type="submit" class="auth-btn">Register</button>
+                    <p class="auth-link">Already have an account? <a href="#">Sign In</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for new offers & Enjoy your meals</h4>
+            <p>sign up and get best deals from our website , that we offers to you.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    
+    <!-- Footer Section (from index.html) -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logos/image-240x110.jpg" alt="Laziz-The Royal Zayka">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Indrapuri sector c, Bhopal, M.P.</p>
+            <p><strong>Phone:</strong> 9876543210</p>
+            <p><strong>Customer Support:</strong> 24/7</p>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>Available on App Store and Google Play Store</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="App Store">
+                <img src="img/pay/play.jpg" alt="Google Play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="Payment Methods">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024, Laziz-The Royal Zayka - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track My Order - Laziz-The Royal Zayka</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <section id="header">
+        <a href="#"><img src="img/logos/image-240x110.jpg" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <a href="#" id="close"><i class='fa fa-close'></i></a>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">foods</a></li>
+                <li><a href="blog.html">Recipe</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <i id="bar" class="fa fa-bars" aria-hidden="true"></i> 
+        </div>
+       
+        <a href="#" class="to-top">
+            <p class="to-top--title">BACK <br> TO TOP</p>
+        </a>
+    </section>
+    <!-- Page Header -->
+    <section id="page-header">
+        <h2>Track My Order</h2>
+        <p>Keep an eye on your order in real time.</p>
+    </section>
+
+    <!-- Tracking Map Section -->
+    <section id="track-order" class="section-p1">
+        <div class="tracking-container">
+            <div id="map" class="tracking-map"></div>
+            <div class="tracking-info">
+                <h3>Order Information</h3>
+                <p>Order Number: #12345</p>
+                <p>Estimated Delivery Time: 30-45 minutes</p>
+                <p>Delivery Address: 123 Main St, Bhopal, M.P.</p>
+            </div>
+        </div>
+    </section>
+   
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for new offers & Enjoy your meals</h4>
+            <p>sign up and get best deals from our website , that we offers to you.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+</div>
+<div class="div-1">
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logos/image-240x110.jpg" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address :</strong> Indrapuri sector c,Bhopal,M.P</p>
+        <p><strong>Phone :</strong>  9876543210</p>
+        <p><strong>Customer support :</strong> 24*7 </p>
+        <div class="follow">
+            <h4>Follow Us On:</h4>
+            <p><strong>Instagram :</strong> Laziz.in</p>
+            <p><strong>Facebook :</strong> Laziz -The Royal Zayka</p>
+            <p><strong>Twitter :</strong> Laziz_zayka</p>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="about.html">About US</a>
+        <a href="deliveryinfo.html">Delivery Information</a>
+        <a href="privacypolicey.html">Privacy Policy</a>
+        <a href="t&c.html">Terms & Conditions</a>
+        <a href="contact.html">Contact Us</a>
+       
+    </div>
+
+    <div class="col">
+        <h4>MY Account</h4>
+        <a href="login.html">Sign In</a>
+        <a href="cart.html">View Cart</a>
+        <a href="mywishlist.html">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="help.html">Help</a>
+    </div>
+
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From app store or Google PLay Store</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>c 2024, With ❤ satyam ,akanksha,vishal & Yash,  Lzziz.in</p>
+    </div>
+</div>
+
+   </footer>
+
+
+    <script>
+        function initMap() {
+            const deliveryLocation = { lat: 23.2599, lng: 77.4126 };
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: deliveryLocation,
+                zoom: 15,
+            });
+
+            const marker = new google.maps.Marker({
+                position: deliveryLocation,
+                map: map,
+                title: "Indrapuri sector c",
+            });
+        }
+
+        // Initialize the map when the page loads
+        window.onload = initMap;
+    </script>
+</body>
+</html>
